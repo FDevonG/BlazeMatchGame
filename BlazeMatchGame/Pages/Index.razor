@@ -103,7 +103,8 @@
     {
         InvokeAsync(() =>
         {
-            tenthsOfSecondsElasped++;timeDisplay = (tenthsOfSecondsElasped / 10f).ToString("0.0s");
+            tenthsOfSecondsElasped++;
+            timeDisplay = (tenthsOfSecondsElasped / 10f).ToString("0.0s");
             StateHasChanged();
         });
     }
