@@ -58,7 +58,7 @@
     protected override void OnInitialized()
     {
         timer = new Timer(1000);
-        timer.Elapsed += Timer_tick;
+        timer.Elapsed += Timer_Tick;
 
         SetUpGame();
     }
@@ -90,7 +90,7 @@
             if (matchesFound == 8)
             {
                 timer.Stop();
-                timeDisplay += " - Play Agian?";
+                timeDisplay += " - Play Again?";
                 SetUpGame();
             }
         }
